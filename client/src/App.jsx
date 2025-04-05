@@ -1,5 +1,9 @@
 
 import './App.css'
+import BuyCredit from './pages/BuyCredit'
+import Home from './pages/Home'
+import Result from './pages/Result'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
  
@@ -7,7 +11,15 @@ function App() {
   return (
     <>
       <div>
-       <h1 className='text-3xl font-bold underline'>Hello from imagify</h1>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/buy' element={<BuyCredit/>} />
+        <Route path='/result' element={<Result/>} />
+        
+        
+
+      </Routes>
+      
       </div>
       
     </>
